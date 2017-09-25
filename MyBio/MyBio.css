@@ -1,39 +1,61 @@
+body {
+	background-image: url("http://cloud-3.steamusercontent.com/ugc/84842745064593334/A1D70ED7689CA499E1F7249558314C616834BD4E/?interpolation=lanczos-none&output-format=jpeg&output-quality=95&fit=inside|200:200&composite-to%3D%2A%2C%2A%7C200%3A200&background-color=black");
+	background-position: center;
+}
+
+h1, ul {
+	color: white;
+}
+
+ul {
+	font-size: 20px;
+}
+
+a:link, a:visited, a:hover, a:active {
+	color: white;
+	text-decoration: none;
+	font-size: 30px;
+}
+
+img {
+	float: right;
+}
+
+h3 {
+	color: white;
+	text-align: right;
+}
 
 .menu {
 	height: 100px;
-	background-color: #B2D6FF;    /* Medium blue */
 }
 
 .sidebar {
 	float: left;
 	width: 200px;
 	height: 500px;
-	background-color: #F09A9D;    /* Red */
 }
 
 .content {
 	float: left;
 	width: 650px;
 	height: 500px;
-	background-color: #F5CF8E;    /* Yellow */
 }
 
 .footer {
 	clear: both;
 	overflow: hidden;
-	background-color: #D6E9FE;    /* Light blue */
 }
 
 .page {
 	width: 900px;
 	margin: 0 auto;
 	overflow: hidden;
-	border: 1px solid red;
+	border: 1px solid white;
 }
 
 .container {
 	overflow: hidden;
-	background-color: #EAEDF0;
 }
 
 .column {
@@ -41,5 +63,4 @@
 	width: 31%;
 	margin: 20px 1.15%;
 	height: 160px;
-	background-color: #B2D6FF;
 }
