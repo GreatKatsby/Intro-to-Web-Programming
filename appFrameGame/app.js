@@ -44,6 +44,7 @@ function MyApp()
 			count = count + 1;
 		}//End if
 		if(guess == num){
+			count = count + 1;
 			if(count == 1){
 				$("#app>footer").text("Your guess is Correct! It took you " + count + " try!");
 			}//End inner first if
