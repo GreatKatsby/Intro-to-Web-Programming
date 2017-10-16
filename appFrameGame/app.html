@@ -9,7 +9,33 @@
 	<body>
 		<div id="app">
 			<header>App</header>
-			<div id="main"></div>
+			<div id="main">
+				<h1>Welcome to Guessing Game</h1>
+		
+				<p>Would you like to play?</p>
+		
+				<div class="play">
+					<button id="yes" onclick="clicked()">YES</button>
+				</div>
+		
+				<p></p>
+		
+				<div class="number">
+					Enter a number: <input id="num" placeholder="Number" type="text" disabled></br>
+					<button id="submit" onclick="number()" disabled>SUBMIT</button>
+				</div>
+		
+				<p></p>
+		
+				<div class="check">
+					Enter your guess: <input id="guess" placeholder="Guess" type="text" disabled></br>
+					<button id="check" onclick="checkGuess()" disabled>CHECK</button>
+				</div>
+				
+				<div>
+					<button id="reload" onclick="reload()" disabled>Reset</button>
+				</div>
+			</div>
 			<footer></footer>
 		</div>
 	</body>
