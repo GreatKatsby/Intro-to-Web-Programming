@@ -59,7 +59,7 @@ function TaskAtHandApp()
 		});
 		
 		$moveDown.click(function(){
-			Task.insertAfter($task.next());
+			$task.insertAfter($task.next());
 		});
 	}
 } // end TaskAtHandApp
