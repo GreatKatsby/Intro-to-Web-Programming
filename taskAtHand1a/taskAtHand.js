@@ -43,7 +43,8 @@ function TaskAtHandApp()
 		var $moveDown = $("<button class='move-up'>v</button>");
 		
 		$task.append($delete)
-		.append($moveUp).append($moveDown)
+		.append($moveUp)
+		.append($moveDown)
 		.append("<span class='task-name'>" + taskName + 
 				"</span>");
 		$task.text(taskName);
