@@ -38,8 +38,28 @@ function TaskAtHandApp()
 	
 	function addTaskElement(taskName){
 		var $task = $("<li></li>");
+		var $delete = $("<button class='delete'>X</button>");
+		var $moveUp = $("<button class='move-up'>^</button>");
+		var $moveDown = $("<button class='move-up'>v</button>");
+		
+		$task.append($delete)
+		.append($moveUp).append($moveDown)
+		.append("<span class='task-name'>" + taskName + 
+				"</span>");
 		$task.text(taskName);
 		$("#task-list").append($task);
+		
+		$delete.click(function(){
+			$task.remove();
+		});
+		
+		$moveUp.click(function() {
+			$task.insertBefore($task.prev());
+		});
+		
+		$moveDown.click(function(){
+			Task.insertAfter($task.next());
+		});
 	}
 } // end TaskAtHandApp
 
