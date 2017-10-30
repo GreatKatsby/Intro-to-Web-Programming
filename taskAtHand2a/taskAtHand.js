@@ -79,7 +79,7 @@ function TaskAtHandApp()
 		saveTaskList();
 	} // End of removeTask
 	
-	function onSelectTask(){
+	function onSelectTask($task){
 		if($task){
 			// Unselected other task
 			$task.siblings(".selected").removeClass("selected");
