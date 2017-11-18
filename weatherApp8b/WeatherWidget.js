@@ -43,7 +43,7 @@ function WeatherWidget($widget){
 				$("#latitude").val(position.coords.latitude);
 				$("#longitude").val(position.coords.longitude);
 			},
-			function(){
+			function(error){
 				$("#controls .error")
 					.text("ERROR: " + error.message)
 					.slideDown();
