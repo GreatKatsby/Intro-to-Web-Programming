@@ -1,0 +1,8 @@
+body{
+	background-image: url("images/felt.jpg");
+	background-size: cover;
+}
+
+.board{
+	text-align: center;
+}
