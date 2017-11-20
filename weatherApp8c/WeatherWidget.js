@@ -16,7 +16,7 @@ function WeatherWidget($widget){
 		coords = lat + "," + lon;
 		
 		$.ajax({
-			url: "http://api.weather.gov/points/" + coords + "/forecast",
+			url: "https://api.weather.gov/points/" + coords + "/forecast",
 			dataType : "json"
 		})
 		.done(function(data){
