@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+	<header>
+		<script src="lib/jquery-3.2.1.min.js"></script>
+		<link href="app.css" rel="StyleSheet" />
+		<script src="app.js"></script>
+	</header>
+	
+	<body>
+		<div id="bank">
+			<span>Your Bet: </span><span id="bid"></span></br>
+			<span>Your Stash: </span><span id="stash"></span></br>
+		</div>
+		
+		<div id="app">
+			<h1 id="state"></h1></br>
+			<div class="bet">
+				Enter Your Bet: <input type="number" id="bet"></input></br>
+				
+				<span id="err"></span>
+			</div>
+			
+			<div class="main">
+				<button id="deal" class="hidden">Deal Hand</button><br/>
+				<button id="hit" class="hidden">HIT</button>
+				<button id="stay" class="hidden">STAY</button></br>
+				<button id="again" class="hidden">Play Again</button>
+			</div>
+			
+			<ul id="opponent">
+			</ul>
+			
+			<div class="opponentTemp" hidden>
+				<li class="opponent">
+					<img id="face" width="150px" height="250px" />
+				</li>
+			</div>
+			
+			<div class="oppVal" hidden>
+				Sum of Opponent's Hand: <span id="oppSum"></span></br>
+			</div>
+			
+			<ul id="hand">
+			</ul>
+			
+			<div class="template" hidden>
+				<li class="hand">
+					<img id="face" width="150px" height="250px" />
+				</li>
+			</div>
+			
+			<div class="val">
+				Sum of Hand: <span id="sum"></span></br>
+			</div>
+			<footer></footer>
+		</div>
+	</body>
+</html>

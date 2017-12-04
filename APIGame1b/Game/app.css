@@ -1,0 +1,75 @@
+body{
+	background-image: url("images/felt.jpg");
+	background-size: cover;
+}
+
+button{
+	border-radius: 10px;
+}
+
+.hand{
+	text-decoration: none;
+	display: inline;
+}
+
+.opponent{
+	text-decoration: none;
+	display: inline;
+}
+
+.hidden{
+	display: none;
+}
+
+.blackjack{
+	animation-name: blackjack;
+	animation-duration: 5s;
+	animation-timing-function: ease;
+}
+
+@keyframes blackjack {
+    0% {color: red;}
+	5% {color: yellow;}
+    10% {color: blue;}
+	15% {color: green;}
+	20% {color: orange;}
+	25% {color: red;}
+	30% {color: yellow;}
+	35% {color: blue;}
+	40% {color: green;}
+	45% {color: orange;}
+    50% {color: yellow;}
+    55% {color: blue;}
+	60% {color: green;}
+	65% {color: orange;}
+	70% {color: red;}
+	75% {color: yellow;}
+	80% {color: blue;}
+	85% {color: green;}
+	90% {color: orange;}
+	95% {color: red;}
+    100% {color: black;}
+}
+
+#face{
+	animation-name: deal;
+	animation-duration: 4s;
+}
+
+@keyframes deal{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+
+#err{
+	font-size: 50px;
+}
+
+#app{
+	text-align: center;
+}
+
+#app>footer{
+	color: white;
+	text-align: left;
+}
